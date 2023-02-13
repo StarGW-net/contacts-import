@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/ImageView01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="30dp"
+			android:layout_marginBottom="20dp"
+			android:contentDescription="image"
+			android:scaleType="center"
+			android:src="@drawable/icon_export" />
+
+		<TextView
+			android:id="@+id/exportSelectAccountText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginLeft="20dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="20dp"
+			android:layout_marginBottom="10dp"
+			android:ellipsize="middle"
+			android:singleLine="true"
+			android:textSize="14sp" />
+
+		<Button
+			android:id="@+id/exportSelectAccountButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:gravity="left|center_vertical|center_horizontal"
+			android:minWidth="200dp"
+			android:text="@string/exportSelectAccountButton" />
+
+
+		<Button
+			android:id="@+id/exportContactsButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:enabled="true"
+			android:gravity="center_vertical|center_horizontal|left"
+			android:minWidth="200dp"
+			android:text="@string/exportContactsButton" />
+
+		<Button
+			android:id="@+id/exportShareButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:gravity="left|center_vertical|center_horizontal"
+			android:minWidth="200dp"
+			android:text="@string/exportShareButton"
+			android:visibility="invisible" />
+
+	</LinearLayout>
+</ScrollView>

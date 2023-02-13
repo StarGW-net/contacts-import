@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="helptext">A Swiss Army knife app for Android contacts. Features import, backup, recover, export, delete and view contacts.
+\n\nFor full help please see web site:\n\nhttp://www.stargw.net/apps/contactsimport/help.html	</string>
+	
+	<string name="helptextGraphics">Graphics by:</string>
+	<string name="helptextGraphicsEmail"><u>info@fluffestudio.com</u></string>
+</resources>

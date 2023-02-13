@@ -1,0 +1,5 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="my_files" path="."/>
+    <cache-path name="temp_files1" path="."/> // must match dir
+    <cache-path name="temp_files2" path="temp/"/> // must match dir
+</paths>

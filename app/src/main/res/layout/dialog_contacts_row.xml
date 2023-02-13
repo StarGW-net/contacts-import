@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+    <TextView android:text="@+id/contactEntryText"
+              android:id="@+id/contactEntryText"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			    android:singleLine="true"
+				android:ellipsize="middle"
+              android:paddingLeft="22sp"
+              android:paddingTop="4sp"
+		      android:paddingBottom="4sp"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"/>
+</LinearLayout>

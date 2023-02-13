@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="600dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:orientation="vertical" >
+
+			<TextView android:id="@+id/dialogShareFile"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:ellipsize="end"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:layout_gravity="center_horizontal"
+			/>
+
+
+			<TextView android:id="@+id/dialogShareAction"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_marginTop="10dp"
+				android:layout_gravity="center_horizontal"
+				android:text="@string/dialogShareAction"
+			/>
+
+		<Button
+			android:id="@+id/dialogShareEmailButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:text="Email Backup"
+			android:minWidth="200dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			/>
+
+			<Button
+			android:id="@+id/dialogShareCopyButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:text="Copy Backup"
+			android:minWidth="200dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			/>
+
+	</LinearLayout>
+
+</ScrollView>
+

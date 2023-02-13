@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="optionsSettings">Paramètres</string>
+	<string name="optionsHelp">Aide</string>
+	<string name="optionsLogs">Consulter les Logs</string>
+	
+	
+	<string name="mainExportButton">&#160;&#160;Exporter Contacts&#160;&#160;</string>
+	<string name="mainImportButton">&#160;&#160;Importer Contacts&#160;&#160;</string>
+	<string name="mainToolsButton">&#160;&#160;Outils (Sauvegarde/Restauration)&#160;&#160;</string>
+	
+	<string name="toolsTitle">Sauvegarde et Restauration</string>
+	<string name="toolsDeleteButton">&#160;&#160;Supprimer Contacts&#160;&#160;</string>
+	<string name="toolsDeleteBackupButton">&#160;&#160;Supprimer Sauvegardes&#160;&#160;</string>
+	<string name="toolsBackupButton">&#160;&#160;Sauvegarder Contacts&#160;&#160;</string>
+	<string name="toolsRecoverButton">&#160;&#160;Restaurer Contacts&#160;&#160;</string>
+	<string name="toolsShareButton">&#160;&#160;Partager Sauvegardes&#160;&#160;</string>
+		
+	<string name="importTitle">Importer Contacts</string>
+	<string name="importCSVButton">&#160;&#160;1. Sélectionner fichier CSV</string>
+	<string name="importMappingsButton">&#160;&#160;2. Correspondance champs</string>
+	<string name="importImportButton">&#160;&#160;3. Importer Contacts</string>
+	<string name="importFileText">Aucun fichier CSV sélectionné.</string>
+	
+	<string name="deleteSelectAccountButton">&#160;&#160;1. Selectionner Compte</string>
+	<string name="deleteContactsButton">&#160;&#160;Supprimer Contacts...</string>
+	<string name="deleteGroupsButton">&#160;&#160;Supprimer Groupes...</string>
+	<string name="deleteDeleteButton">&#160;&#160;Supprimer Sélection</string>
+	<string name="deleteContacts">Supprimer Contacts</string>
+	<string name="deleteGroups">Supprimer Groupes</string>
+		
+	<string name="viewSelectAccountButton">&#160;&#160;1. Selectionner Compte</string>
+	<string name="viewContactsButton">&#160;&#160;Consulter Contacts</string>
+	<string name="viewGroupsButton">&#160;&#160;Consulter Groupes</string>
+
+	
+	<string name="exportSelectAccountButton">&#160;&#160;1. Selectionner Compte</string>
+	<string name="exportContactsButton">&#160;&#160;Exporter Contacts</string>
+	<string name="exportShareButton">&#160;&#160;Partager Exports&#160;&#160;</string>
+	
+	<string name="mapImportTitle">Correspondance Champs Import</string>
+	<string name="mapImportProfile">Selectionner Profil:&#160;</string>
+	<string name="mapImportCodePage">Code Page:&#160;</string>
+	<string name="mapImportReset">Appliquer Champs</string>
+	<string name="mapImportIgnoreFirstLine">&#160;Ignorer la première ligne du fichier CSV</string>
+	<string name="mapImportConcatAddress">&#160;Concaténer les champs Adresse</string>
+	<string name="mapBackText">&lt;Retour en arrière Sauvegarde.</string>
+	
+	
+	<string name="dialogShareTitle">Partager fichier Sauvegarde</string>
+	<string name="dialogShareCodePage">Selection du Code Page pour la Sauvegarde :</string>
+	<string name="dialogShareAction">Selection de la méthode du partage Sauvegarde :</string>
+			
+	<string name="dialogImportTitle">Paramètre Code Page</string>
+	<string name="dialogImportCodePage">Selection du Code Page pour l\'Import :</string>
+	<string name="dialogImportHelp">Si vous ne connaissez pas le Code page à affecter, ne modifiez pas la sélection par défaut, cela fonctionnera dans la plupart des cas. Changer le Code page permet d\'utiliser des caractères de différentes langues.</string>
+	
+	<string name="dialogExportTitle">Paramètre Code Page</string>
+	<string name="dialogExportCodePage">Selection du Code Page pour l\'Export :</string>
+	<string name="dialogExportHelp">Si vous ne connaissez pas le Code page à affecter, ne modifiez pas la sélection par défaut, cela fonctionnera dans la plupart des cas. Changer le Code page permet d\'utiliser des caractères de différentes langues.</string>
+	
+	<string name="settingsHelpButton">&#160;&#160;Aide</string>
+	<string name="settingsLogsButton">&#160;&#160;Consulter Logs</string>	
+	<string name="settingsEmailDeveloperButton">&#160;&#160;Partager Concepteur</string>
+	<string name="settingsBuyProButton">&#160;&#160;Acheter la version Pro</string>	
+
+
+
+	<!-- Generic Headings -->
+	<string name="warning">Attention !</string>
+	<string name="pleaseWait">Attendez SVP...</string>
+	<string name="success">Succès !</string>
+	<string name="failure">Anomalie !</string>
+	<string name="cancelled">Annulé !</string>
+	<string name="share">Partage</string>
+	<string name="back">Retour</string>
+	<string name="internal">Interne</string>
+	<string name="external">Externe</string>
+	<string name="account">Compte</string>
+	<string name="done">Terminé</string>
+	<string name="close">Fermer</string>
+	<string name="clearLogs">Réinitialiser Logs</string>
+    <string name="field">Champs</string>
+    <string name="selectField">Selection Champs</string>
+		
+	<string name="maxContacts" formatted="false">Nombre maximum de contacts atteint. Seulement %d enregistrés.</string>
+	<string name="upgrade" formatted="false">Nombre maximum de contacts atteint. Seulement %d enregistrés. Pour importer plus de %d contacts, achetez la version PRO de cette appli</string>
+	<string name="upgradeExport" formatted="false">Exports limités à %d dans la version Lite. Pour exporter plus de %d contacts, achetez la version PRO de cette appli</string>
+	<string name="upgradeExport2" formatted="false">Nombre maximum de contacts atteint. Seulement %d exportés. Pour exporter plus de %d contacts, achetez la version PRO de cette appli</string>
+	
+	<string name="currentAccount02" formatted="false">Compte : %s (%d)</string>
+	<string name="selectAccount">Selection Compte</string>
+	<string name="noAccounts">Aucun Compte !</string>
+	<string name="noContactsIn">Aucun contact lié à ce compte</string>
+	<string name="noContacts">Aucun Contact !</string>
+	<string name="noGroups">Aucun Groupe !</string>
+				
+	<string name="developerEmailSubject">Aide Contacts Import</string>
+	<string name="emailFailed">Impossible d\'envoyer un email. Vérifier les logs pour plus de détails.</string>
+
+		
+	<!-- Action Dialog Box -->
+	<string name="dialogAction01">Sauvegarder avant la suppression ?</string>
+	<string name="dialogAction02" formatted="false">%d contacts supprimés du compte \"%s\" et %d contacts importés du fichier :</string>
+	<string name="dialogAction03" formatted="false">"%d contacts supprimés du compte \"%s\" et remplacés par %d contacts du fichier de sauvegarde :</string>
+	<string name="dialogAction04" formatted="false">"%d contacts supprimés du compte \"%s\"?</string>
+	
+	
+	<!-- Info Box Popup Dialogs -->
+	<string name="error01">Lecture des Contacts du fichier impossible</string>
+	
+	
+	<!-- Activity Import -->
+	<string name="text01" formatted="false">Fichier chargé : %d entrées</string>
+	<string name="text02">Aucun fichier CSV sélectionné</string>
+	<string name="text03">Correspondance :&#160;</string>
+	<string name="text04" formatted="false">Fichier : %s (%d)</string>
+	<string name="text05">Vous importez un fichier CSV sans avoir paramétré de correspondance. Le résultat risque de ne pas être correct ! Voulez-vous continuer ?</string>
+
+	
+	<!-- Activity Logs -->
+	<string name="logsLoggingLevel">Paramétrer le niveau de Logs :&#160;</string>
+	<string name="logsViewLogs">Logs</string>
+	<string name="text21">Selection niveau de Logs</string>
+	<string name="text22">Ce niveau de Logs prend effet dès maintenant.</string>
+	<string name="text23" formatted="false">Positionner le niveau de Logs à %s va générer beaucoup de traces et diminuer les performances.</string>	
+	
+	<!-- Activity Common -->
+	<string name="selectFile">Selection Fichier</string>
+	<string name="noFiles" formatted="false">Aucun fichier %s !</string>
+	<string name="selectCodePage" formatted="false">Selection Code Page</string>
+
+	<!-- Activity Delete -->
+	<string name="deleteGroupsTitle">Supprimer Groupes</string>
+	<string name="noGroupsSelected">Aucun Groupe sélectionné</string>
+	<string name="deleteGroupsPrompt" formatted="false">Voulez-vous supprimer le Groupe %d ?</string>
+	<string name="deleteContactsTitle">Supprimer Contacts</string>
+	<string name="noContactsSelected">Aucun Contacts sélectionné</string>
+
+	<!-- Activity Mappings Common -->
+	<string name="selectFieldMappings">Sélection correspondance champs</string>
+	
+	<!-- Activity Mappings Import -->
+	<string name="noExampleCSV">Aucun CSV exemple chargé</string>
+	
+	<!-- Activity Tools -->
+	<string name="noRecordsLoadedFromFile">Aucun enregistrement lu dans le fichier</string>
+	<string name="deletedFile">Fichier supprimé</string>
+	<string name="backupFile">Fichier sauvegarde copié dans :</string>	
+	<string name="backupFileFailed">Fichier sauvegarde non copié. Voir les Logs pour plus de détails.</string>	
+			
+	<!--  Task Import -->
+	<string name="adding01" formatted="false">Ajout de %d contacts :</string>
+	<string name="added01" formatted="false">%d contacts ajoutés sur %d pour le compte \"%s\".</string>
+	<string name="added02" formatted="false">%d contacts ajouté sur %d pour le compte \"%s\".\n\nVoir les Logs pour les erreurs.</string>
+	<string name="viewContacts">Consulter Contacts</string>
+	
+	<!--  Global -->
+	<string name="noKeyFields">Aucun champ Prénom ou Nom défini.\n\nAndroid l\'autorise, mais est-ce bien votre souhait ?</string>
+
+	
+	<!-- Task Delete(s) -->
+	<string name="deleting01" formatted="false">%d contacts en cours de suppression.\n\nPatientez SVP...</string>
+	<string name="deletingGroups01" formatted="false">%d groups en cours de suppression.\n\nPatientez SVP...</string>
+	<string name="deleted01" formatted="false">%d contacts supprimés sur %d pour le compte \"%s\".</string>
+	<string name="deleted02" formatted="false">%d contacts supprimés sur %d pour le compte \"%s\".\n\nVoir les Logs pour les erreurs.</string>
+	<string name="deletedGroups01" formatted="false">%d groupes supprimés sur %d pour le compte \"%s\".</string>
+	<string name="deletedGroups02" formatted="false">%d groupes supprimés sur %d pour le compte \"%s\".\n\nVoir les Logs pour les erreurs.</string>
+	<string name="cancelDelete">Annuler suppression</string>
+	
+	<!-- Task Get Contacts(s) -->
+	<string name="fetchingContacts">Affectation Contacts</string>
+	<string name="fetchingGroups">Affectation Groupes</string>
+	<string name="fetched01" formatted="false">Affectation de %d contacts pour le compte \"%s\".</string>
+		
+	<!--  Task Backup -->
+	<string name="exporting01" formatted="false">Exportation de %s contacts.\n\nPatientez SVP...</string>
+	<string name="backingUp01" formatted="false">Sauvegarde de  %s contacts.\n\nPatientez SVP...</string>
+	<string name="exported01" formatted="false">Exportation de %d contacts sur %d du compte \"%s\".\n\nSauvegardé dans le fichier : %s</string>
+	<string name="backedUp01" formatted="false">Sauvegarde de %d contacts sur %d du compte \"%s\".</string>
+	<string name="exported02" formatted="false">%d contacts partiellement exporté sur %d du compte \"%s\". Voir les Logs pour les erreurs.\n\nSauvegardé dans le fichier : %s</string>
+	<string name="backedUp02" formatted="false">%d contacts partiellement sauvegardés sur %d du compte \"%s\".Voir les Logs pour les erreurs.</string>
+	<string name="exported03">Export annulé par l\'utilisateur.\n\nAucun fichier Export créé !</string>
+	<string name="backedUp03">Sauvegarde annulée par l\'utilisateur.\n\nAucun fichier Sauvegarde créé !</string>
+
+	<!--  Task Recover -->
+	<string name="recovering01" formatted="false">Récupération de %d contacts :</string>
+	<string name="recovered01" formatted="false">%d contacts récupérés sur %d pour le compte \"%s\".</string>
+	<string name="recovered02" formatted="false">%d contacts supprimés sur %d pour le compte \"%s\".\n\nVoir les Logs pour les erreurs.</string>
+	
+	
+	<!--  Task Load -->
+	<string name="loading01">Chargement du fichier.\n\nPatientez SVP...</string>
+	<string name="loaded02" formatted="false">Fichier \"%s\" non chargé.</string>
+	
+	
+	<!-- Task Names For Notification Bar -->
+	<string name="finished">Traitement terminé !</string>
+	<string name="importing">Importation des contacts...</string>
+	<string name="deleting">Suppression des contacts...</string>
+	<string name="deletingGroups">Suppression des groupes...</string>
+	<string name="exporting">Exportation des contacts...</string>
+	<string name="recovering">Récupération des contacts...</string>
+	<string name="backingup">Sauvegarde des contacts...</string>
+		
+
+
+	<string name="viewGroups">Consulter Groupes</string>
+	<string name="fetchingLogs">Consulter Logs</string>
+			
+</resources>

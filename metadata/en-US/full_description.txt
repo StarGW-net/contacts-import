@@ -1,0 +1,7 @@
+Import your CSV contacts from your favourite desktop client without any cloud syncing. Multi-language fully supported including all common localised codepages (from US & Westen Europe to Eastern Europe to China and Japan) and also UTF, so you get your contact information exactly how it should be on the phone.
+ 
+Import contacts from Excel CSV files with over 100 field mappings available. Popular address books formats fully supported to easily get your contacts from Microsoft Outlook and other applications onto your phone. Even has custom mapping features to give you full control over which contact fields you want to import on your phone
+
+Your imported Android contacts are kept on your phone and never synced with any Cloud service ever. With this app you will never have to give your contacts to Google, Yahoo, or any other Cloud service again. No need to install any sync bloatware programs on your PC. Your contacts will remain confidential to you.
+
+Note this is a one way import from your authorative CSV file.

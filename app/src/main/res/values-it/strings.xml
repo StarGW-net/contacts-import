@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+		
+	<string name="optionsSettings">Impostazioni</string>
+	<string name="optionsHelp">Aiuto</string>
+	<string name="optionsLogs">Visualizza Logs</string>
+	
+	
+	<string name="mainExportButton">&#160;&#160;Esporta Contatti&#160;&#160;</string>
+	<string name="mainImportButton">&#160;&#160;Importa Contatti&#160;&#160;</string>
+	<string name="mainToolsButton">&#160;&#160;Tools (Backup/Ripristino)&#160;&#160;</string>
+	
+	<string name="toolsTitle">Backup e Ripristino</string>
+	<string name="toolsDeleteButton">&#160;&#160;Cancella Contatti&#160;&#160;</string>
+	<string name="toolsDeleteBackupButton">&#160;&#160;Cancella Backups&#160;&#160;</string>
+	<string name="toolsBackupButton">&#160;&#160;Backup Contatti&#160;&#160;</string>
+	<string name="toolsRecoverButton">&#160;&#160;Ripristino Contatti&#160;&#160;</string>
+	<string name="toolsShareButton">&#160;&#160;Condividi Backups&#160;&#160;</string>
+		
+	<string name="importTitle">Importa Contatti</string>
+	<string name="importCSVButton">&#160;&#160;1. Seleziona File CSV</string>
+	<string name="importMappingsButton">&#160;&#160;2. Mappatura Campi</string>
+	<string name="importImportButton">&#160;&#160;3. Importa Contatti</string>
+	<string name="importFileText">Nessun file CSV selezionato.</string>
+	
+	<string name="deleteSelectAccountButton">&#160;&#160;1. Seleziona Account</string>
+	<string name="deleteContactsButton">&#160;&#160;Cancella Contatti...</string>
+	<string name="deleteGroupsButton">&#160;&#160;Cancella Gruppi...</string>
+	<string name="deleteDeleteButton">&#160;&#160;Cancella Selezionato</string>
+	<string name="deleteContacts">Cancella Contatti</string>
+	<string name="deleteGroups">Cancella Gruppi</string>
+		
+	<string name="viewSelectAccountButton">&#160;&#160;1. Seleziona Account</string>
+	<string name="viewContactsButton">&#160;&#160;Visualizza Contatti</string>
+	<string name="viewGroupsButton">&#160;&#160;Visualizza Gruppi</string>
+
+	
+	<string name="exportSelectAccountButton">&#160;&#160;1. Seleziona Account</string>
+	<string name="exportContactsButton">&#160;&#160;Esporta Contatti</string>
+	<string name="exportShareButton">&#160;&#160;Condividi Esportazioni&#160;&#160;</string>
+	
+	<string name="mapImportTitle">Mappatura Importa Campi</string>
+	<string name="mapImportProfile">Seleziona Profilo:&#160;</string>
+	<string name="mapImportCodePage">Code Page:&#160;</string>
+	<string name="mapImportReset">Applica Campi</string>
+	<string name="mapImportIgnoreFirstLine">&#160;Ignora la prima riga del file CSV</string>
+	<string name="mapImportConcatAddress">&#160;Concatena campi di indirizzi</string>
+	<string name="mapBackText">&lt;Back Saving.</string>
+	
+	
+	<string name="dialogShareTitle">Condividi Backup File</string>
+	<string name="dialogShareCodePage">Seleziona Code Page per Backup:</string>
+	<string name="dialogShareAction">Seleziona Metodo di Condivisione Backup:</string>
+			
+	<string name="dialogImportTitle">Imposta File Code Page</string>
+	<string name="dialogImportCodePage">Seleziona Code Page per Importare:</string>
+	<string name="dialogImportHelp">Se non conosci la tua code page lascia quella di default solitamente valida per tutti. Cambiare la code page gestisce caratteri differenti supportati da altre lingue.</string>
+	
+	<string name="dialogExportTitle">Imposta Code Page</string>
+	<string name="dialogExportCodePage">Seleziona Code Page per Esportazione:</string>
+	<string name="dialogExportHelp">Se non conosci la tua code page lascia quella di default solitamente valida per tutti. Cambiare la code page gestisce caratteri differenti supportati da altre lingue.</string>
+	
+	<string name="settingsHelpButton">&#160;&#160;Aiuto</string>
+	<string name="settingsLogsButton">&#160;&#160;Visualizza Logs</string>	
+	<string name="settingsEmailDeveloperButton">&#160;&#160;Condividi Sviluppatore</string>
+	<string name="settingsBuyProButton">&#160;&#160;Acquista la Versione Pro</string>	
+
+
+
+	<!-- Generic Headings -->
+	<string name="warning">Attenzione!</string>
+	<string name="pleaseWait">Prego Attendere...</string>
+	<string name="success">Successo!</string>
+	<string name="failure">Fallito!</string>
+	<string name="cancelled">Cancellato!</string>
+	<string name="share">Condivisione</string>
+	<string name="back">Indietro</string>
+	<string name="internal">Interno</string>
+	<string name="external">Esterno</string>
+	<string name="account">Account</string>
+	<string name="done">Fatto</string>
+	<string name="close">Chiudi</string>
+	<string name="clearLogs">Pulisci Logs</string>
+	<string name="field">Field</string>
+	<string name="selectField">Select Field</string>
+
+	<string name="maxContacts" formatted="false">Eccede il numero massimo di contatti. Solo %d caricati.</string>
+	<string name="upgrade" formatted="false">Eccede il numero massimo di contatti. Solo %d caricati. Per importarne oltre i %d effettuare l\'upgrade alla versione PRO di questa App</string>
+	<string name="upgradeExport" formatted="false">Export limited to %d in the Lite version. To export more than %d contacts please upgrade to the PRO version of this App</string>
+	<string name="upgradeExport2" formatted="false">Maximum number of contacts exceeded. Only %d exported. To export more than %d contacts please upgrade to the PRO version of this App</string>
+	
+	<string name="currentAccount02" formatted="false">Account: %s (%d)</string>
+	<string name="selectAccount">Seleziona Account</string>
+	<string name="noAccounts">Nessun Account!</string>
+	<string name="noContactsIn">Nessun contatto nell\'account</string>
+	<string name="noContacts">Nessun Contatto!</string>
+	<string name="noGroups">Nessun Gruppo!</string>
+				
+	<string name="developerEmailSubject">Importa Contatti Aiuto</string>
+	<string name="emailFailed">Impossibile inviare email. Controlla i logs per dettagli.</string>
+
+		
+	<!-- Action Dialog Box -->
+	<string name="dialogAction01">Backup before delete?</string>
+	<string name="dialogAction02" formatted="false">Cancella %d contatti dall\'account \"%s\" e importa %d contatti dal file:</string>
+	<string name="dialogAction03" formatted="false">"Cancella %d contatti dall\'account \"%s\" e sostituisci con %d contatti dal backup file:</string>
+	<string name="dialogAction04" formatted="false">"Cancella %d contatti dall\'account \"%s\"?</string>
+	
+	
+	<!-- Info Box Popup Dialogs -->
+	<string name="error01">Fallito il caricamento di ogni contatto dal file </string>
+	
+	
+	<!-- Activity Importa -->
+	<string name="text01" formatted="false">File caricato: %d entità</string>
+	<string name="text02">Nessun file CSV selezionato</string>
+	<string name="text03">Mapping Selezionato:&#160;</string>
+	<string name="text04" formatted="false">File: %s (%d)</string>
+	<string name="text05">Hai importato un CSV senza impostare nessuna mappatura campi. Pessima idea! Vuoi procedere?</string>
+
+	
+	<!-- Activity Logs -->
+	<string name="logsLoggingLevel">Imposta Livello di logging:&#160;</string>
+	<string name="logsViewLogs">Logs</string>
+	<string name="text21">Seleziona Livello di logging</string>
+	<string name="text22">Il nuovo livello ha effetto da ora.</string>
+	<string name="text23" formatted="false">Impostare un livello in %s riduce le performance.</string>	
+	
+	<!-- Activity Common -->
+	<string name="selectFile">Seleziona File</string>
+	<string name="noFiles" formatted="false">Nessun %s file!</string>
+	<string name="selectCodePage" formatted="false">Seleziona Code Page</string>
+
+	<!-- Activity Cancella -->
+	<string name="deleteGroupsTitle">Cancella Gruppi</string>
+	<string name="noGroupsSelected">Nessun Gruppo Selezionato</string>
+	<string name="deleteGroupsPrompt" formatted="false">Sei sicuro di voler cancellare %d Gruppi?</string>
+	<string name="deleteContactsTitle">Cancella Contatti</string>
+	<string name="noContactsSelected">Nessun Contatto Selezionato</string>
+
+	<!-- Activity Mappings Common -->
+	<string name="selectFieldMappings">Seleziona Mappatura Campi</string>
+	
+	<!-- Activity Mappings Importa -->
+	<string name="noExampleCSV">Nessun Esempio CSV caricato</string>
+	
+	<!-- Activity Tools -->
+	<string name="noRecordsLoadedFromFile">Nessun Records caricato dal File</string>
+	<string name="deletedFile">deletedFile</string>
+	<string name="backupFile">Backup file copiato in:</string>	
+	<string name="backupFileFailed">Backup file non copiato. Vedere i logs per i dettagli.</string>	
+			
+	<!--  Task Importa -->
+	<string name="adding01" formatted="false">Aggiungi %d contatti:</string>
+	<string name="added01" formatted="false">Aggiunti %d contatti di %d nell\'account \"%s\".</string>
+	<string name="added02" formatted="false">Aggiunti %d contatto di %d nell\'account \"%s\".\n\nVisualizza i logs per errori.</string>
+	<string name="viewContacts">Visualizza Contatti</string>
+	
+	<!--  Global -->
+	<string name="noKeyFields">Nessun campo Nome data o nome di famiglia definito.\n\nAndroid permette questo, ma è davvero quello che vuoi?</string>
+
+	
+	<!-- Task Delete(s) -->
+	<string name="deleting01" formatted="false">Cancellare %d contatto.\n\nPrego attendere...</string>
+	<string name="deletingGroups01" formatted="false">Cancellare %d groups.\n\nPrego attendere...</string>
+	<string name="deleted01" formatted="false">Cancellato %d contatto di %d nell\'account \"%s\".</string>
+	<string name="deleted02" formatted="false">Cancellato %d contatto di %d nell\'account \"%s\".\n\nVisualizza i logs per errori.</string>
+	<string name="deletedGroups01" formatted="false">Cancellato %d gruppi di %d nell\'account \"%s\".</string>
+	<string name="deletedGroups02" formatted="false">Cancellato %d gruppi di %d nell\'account \"%s\".\n\nVisualizza i logs per errori.</string>
+	<string name="cancelDelete">Cancellazione Annullata</string>
+	
+	<!-- Task Get Contatti(s) -->
+	<string name="fetchingContacts">Recupero Contatti</string>
+	<string name="fetchingGroups">Recupero Gruppi</string>
+	<string name="fetched01" formatted="false">Recuperato %d contatto dall\'account \"%s\".</string>
+		
+	<!--  Task Backup -->
+	<string name="exporting01" formatted="false">Esportazione %s contatto.\n\nPrego attendere...</string>
+	<string name="backingUp01" formatted="false">Backing Up  %s contatto.\n\nPrego attendere...</string>
+	<string name="exported01" formatted="false">Esportato %d contatto di %d nell\'account \"%s\".\n\nSalvato nel file: %s</string>
+	<string name="backedUp01" formatted="false">Backed Up %d contatto di %d nell\'account \"%s\".</string>
+	<string name="exported02" formatted="false">Parzialmente Esportato %d contatto di %d nell\'account \"%s\". Visualizza i logs per errori.\n\nSaved to file: %s</string>
+	<string name="backedUp02" formatted="false">Parzialmente Backed Up %d contatto di %d nell\'account \"%s\".Visualizza i logs per errori.</string>
+	<string name="exported03">Esportazione cancellata dall\'utente.\n\nNessuna esportazione scritta su file!</string>
+	<string name="backedUp03">Backup cancelled dall\'utente.\n\nNessun backup scritta su file!</string>
+
+	<!--  Task Ripristino -->
+	<string name="recovering01" formatted="false">Recupero %d contatto:</string>
+	<string name="recovered01" formatted="false">Recuperato %d contatto di %d nell\'account \"%s\".</string>
+	<string name="recovered02" formatted="false">Cancellato %d contatto di %d nell\'account \"%s\".\n\nVisualizza i logs per errori.</string>
+	
+	
+	<!--  Task Load -->
+	<string name="loading01">Caricamento file.\n\nPrego attendere...</string>
+	<string name="loaded02" formatted="false">File \"%s\" non caricato.</string>
+	
+	
+	<!-- Task Names For Notification Bar -->
+	<string name="finished">Tutti i tasks completati!</string>
+	<string name="importing">Importare contatto...</string>
+	<string name="deleting">Cancellare contatto...</string>
+	<string name="deletingGroups">Cancellare gruppi...</string>
+	<string name="exporting">Esportare contatto...</string>
+	<string name="recovering">Recupero contatto...</string>
+	<string name="backingup">Backing Up contatto...</string>
+		
+
+
+	<string name="viewGroups">Visualizza Gruppi</string>
+	<string name="fetchingLogs">Recupero Logs</string>
+			
+</resources>

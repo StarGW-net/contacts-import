@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="helptext">Véritable couteau Suisse des contacts Android. Permet d\'importer, sauvegarder, restaurer, exporter, supprimer et consulter ses contacts.
+\n\nConsultez l\'aide complète en anglais sur le site \n\nhttp://w.stargw.net/apps/contactsimport/help	</string>
+	
+	<string name="helptextGraphics">Graphiques par :</string>
+	<string name="helptextGraphicsEmail"><u>info@fluffestudio.com</u></string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentContainer"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+
+    
+        
+  <androidx.viewpager.widget.ViewPager
+    android:id="@+id/viewpager"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:text="Waiting for contacts database..."
+    >
+  
+      <androidx.viewpager.widget.PagerTabStrip
+        android:id="@+id/pager_title_strip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#484848"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+      </androidx.viewpager.widget.ViewPager>
+
+	
+</LinearLayout>

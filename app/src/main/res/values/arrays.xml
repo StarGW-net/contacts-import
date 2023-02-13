@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="importProfiles">	
+	<item>Reset all fields to none</item>
+	<item>Custom field mappings</item>  
+	<item>Outlook English field mappings</item>
+	<item>Outlook Spanish field mappings</item>
+	<item>Thunderbird field mappings</item>
+	<item>Alpha mappings</item>
+	</string-array>
+	
+	
+	<string-array name="importProfilesFriendly">  
+	<item>None</item>
+	<item>Custom</item>  
+	<item>Outlook English</item>
+	<item>Outlook Spanish</item>
+	<item>Thunderbird</item>
+	<item>SW Cloud</item>
+	<item>SW Fastmail</item>
+	</string-array>
+	
+	
+	<string-array name="codePages">  
+		<item>CP1252</item>
+		<item>UTF-8</item>
+		<item>CP1250</item>
+		<item>CP1251</item>
+		<item>CP1253</item>
+		<item>CP1254</item>
+		<item>CP1255</item>
+		<item>CP1256</item>
+		<item>CP1257</item>
+		<item>CP1258</item>
+		<item>CP874</item>
+		<item>CP932</item>
+		<item>CP936</item>
+		<item>CP949</item>
+		<item>CP950</item>
+		<item>UTF-16</item>
+	</string-array>
+	
+	<string-array name="codePagesFriendly">  
+		<item>US &amp; Western Europe - CP1252</item>
+		<item>UTF-8</item>
+		<item>Eastern Europe - CP1250</item>
+		<item>Cyrillic - CP1251</item>
+		<item>Greek - CP1253</item>
+		<item>Turkish - CP1254</item>
+		<item>Hebrew - CP1255</item>
+		<item>Arabic - CP1256</item>
+		<item>Baltic - CP1257</item>
+		<item>Vietnamese - CP1258</item>
+		<item>Thai - CP874</item>
+		<item>Japanese Shift-JIS - CP932</item>
+		<item>Simplified Chinese GBK - CP936</item>
+		<item>Korean - CP949</item>
+		<item>Traditional Chinese Big5 - CP950</item>
+		<item>UTF-16</item>
+	</string-array>
+	
+
+		
+	
+	<string-array name="swipePages">
+		<item>IMPORT</item>
+		<item>BACKUP &amp; RECOVER</item>
+		<item>EXPORT</item>
+		<item>DELETE</item>
+		<item>VIEW</item>
+		<item>LOGS &amp; HELP</item>
+		<item>WIBBLE</item>
+	</string-array>
+
+	<string-array name="logLevels">
+		<item>Normal</item>
+		<item>Verbose</item>
+		<item>Debug</item>
+	</string-array>
+	
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="NONE" >Aucun</string>
+	<string name="GIVEN_NAME">Prénom</string>
+	<string name="FAMILY_NAME">Nom complet</string>
+	<string name="MIDDLE_NAME">Nom court</string>
+	<string name="ADDRESS_HOME">Adresse domicile</string>
+	<string name="ADDRESS_WORK">Adresse travail</string>
+	<string name="ADDRESS_OTHER">Adresse autre</string>
+	<string name="PHONE_WORK">Téléphone travail</string>
+	<string name="PHONE_HOME">Téléphone domicile</string>
+	<string name="PHONE_OTHER">Téléphone autre</string>
+	<string name="MOBILE">Mobile</string>
+	<string name="MOBILE_WORK">Mobile travail</string>
+	<string name="MOBILE_PERSONAL">Mobile personnel</string>
+	<string name="EMAIL_HOME">Email personnel</string>
+	<string name="EMAIL_WORK">Email travail</string>
+	<string name="EMAIL_OTHER">Email autre</string>
+	<string name="BIRTHDAY">Date anniversaire</string>
+	<string name="COMPANY">Nom société</string>
+	<string name="NOTES">Notes</string>
+	<string name="WEBSITE">Site Web</string>
+	<string name="GROUP">Groupe</string>
+	<string name="IM" >Messagerie instantanée</string>
+	<string name="PHOTO" >Photo</string>
+	<string name="NICKNAME" >Surnom</string>
+	<string name="FAX" >Fax</string>
+	
+</resources>

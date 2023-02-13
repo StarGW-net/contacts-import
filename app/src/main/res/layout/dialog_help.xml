@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+    
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:minWidth="600dp"
+	android:layout_marginLeft="20dp"
+	android:layout_marginRight="20dp"
+	android:orientation="vertical" >
+
+		<TextView android:id="@+id/dialogHelpText"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:autoLink="web"
+			android:layout_gravity="left"
+			android:text="@string/helptext"
+		/>
+				
+		<TextView android:id="@+id/dialogHelpTextGraphics"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:autoLink="web"
+			android:layout_gravity="left"
+			android:text="@string/helptextGraphics"
+		/>
+			
+		<TextView android:id="@+id/dialogHelpTextGraphicsEmail"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#33b5e4"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:autoLink="web"
+			android:layout_gravity="left"
+			android:text="@string/helptextGraphicsEmail"
+		/>
+		    		
+	<ImageView
+	    android:id="@+id/iconLogo"
+	    android:layout_width="72dp"
+	    android:layout_height="72dp"
+	    android:layout_gravity="left"
+	    android:contentDescription="image"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:src="@drawable/logo_fluff" />
+	
+
+		<Button
+	    android:id="@+id/dialogHelpCancel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:text="@string/close"
+		android:minWidth="200dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp" 
+	    />
+
+</LinearLayout>
+
+</ScrollView>
+

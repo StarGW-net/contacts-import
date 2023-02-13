@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:minWidth="600dp"
+	android:orientation="vertical" >
+
+				
+<LinearLayout 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="20dp"
+	android:layout_marginRight="20dp"
+	android:orientation="vertical" >
+    
+		
+
+
+		<TextView android:id="@+id/dialogActionText"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_gravity="center_horizontal"
+		/>
+
+		<TextView android:id="@+id/dialogActionFile"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:singleLine="true"
+			android:ellipsize="middle"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:layout_gravity="center_horizontal"
+		/>
+				
+		<LinearLayout
+		android:id="@+id/dialogActionOption"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp">
+	
+		<CheckBox
+		    android:id="@+id/dialogActionCB"
+		    android:checked="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical" />
+
+	
+			<TextView android:id="@+id/dialogActionCBText"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_gravity="center_vertical"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			/>
+		
+		</LinearLayout>
+	</LinearLayout>
+	
+		<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dip"
+    android:background="?android:attr/dividerHorizontal" />
+		
+<LinearLayout 
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="0dip"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip"
+    android:measureWithLargestChild="true">
+			
+
+		
+		
+    <Button 
+        android:id="@+id/dialogActionCancel"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@android:string/cancel"/>
+    <Button 
+        android:id="@+id/dialogActionOK"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@android:string/ok"/>
+		</LinearLayout>
+
+
+</LinearLayout>
+
+

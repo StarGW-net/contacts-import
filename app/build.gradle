@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        applicationId "eu.stargw.contactsimport"
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 32
+        versionName "32"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    // compile 'com.android.support:appcompat-v7:26.+'
+    // compile 'com.android.support:support-v4:26.+'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+}
+

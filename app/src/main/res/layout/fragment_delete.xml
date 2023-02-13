@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/ImageView01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="30dp"
+			android:layout_marginBottom="20dp"
+			android:contentDescription="image"
+			android:scaleType="center"
+			android:src="@drawable/icon_delete" />
+
+		<TextView
+			android:id="@+id/deleteSelectAccountText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginLeft="20dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="20dp"
+			android:layout_marginBottom="10dp"
+			android:ellipsize="middle"
+			android:singleLine="true"
+			android:textSize="14sp" />
+
+		<Button
+			android:id="@+id/deleteSelectAccountButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:gravity="left|center_vertical|center_horizontal"
+			android:minWidth="200dp"
+			android:text="@string/deleteSelectAccountButton" />
+
+
+		<Button
+			android:id="@+id/deleteContactsButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:enabled="true"
+			android:gravity="center_vertical|center_horizontal|left"
+			android:minWidth="200dp"
+			android:text="@string/deleteContactsButton" />
+
+
+		<Button
+			android:id="@+id/deleteGroupsButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:gravity="left|center_vertical|center_horizontal"
+			android:minWidth="200dip"
+			android:text="@string/deleteGroupsButton" />
+
+	</LinearLayout>
+</ScrollView>

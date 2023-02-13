@@ -1,0 +1,153 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mappings"
+	android:orientation="vertical"
+	android:layout_margin="10dp"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	
+	<TextView android:id="@+id/mapImportTitle"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:gravity="center_horizontal"
+		android:text="@string/mapImportTitle"
+	/>
+
+	
+	<ScrollView android:id="@+id/Scroll"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+		
+		<LinearLayout android:id="@+id/mapImportLayout"
+		android:orientation="vertical"
+		android:layout_margin="10dp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		
+
+					
+			<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+	
+				<CheckBox
+				android:id="@+id/mapImportIgnoreFirstLineCB"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" />
+
+	
+				<TextView android:id="@+id/mapImportIgnoreFirstLineT"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="@string/mapImportIgnoreFirstLine"
+				/>
+
+			</LinearLayout>
+			
+			<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp">
+	
+				<CheckBox
+				android:id="@+id/mapImportConcatAddressCB"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" />
+
+	
+				<TextView android:id="@+id/concatAddressT"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="@string/mapImportConcatAddress"
+				/>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="fill_parent" 
+				android:layout_height="4px" 
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:background="#C0C0C0"
+			>
+			</LinearLayout>
+				
+			<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp" >
+						
+			<TextView android:id="@+id/mapImportProfile"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="@string/mapImportProfile"
+				android:gravity="left|center_vertical"
+				/>
+				
+
+	
+				<TextView android:id="@+id/mapImportResetPicker"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:singleLine="true"
+				android:ellipsize="end"
+				android:paddingTop="10px"
+				android:paddingBottom="10px"
+				android:paddingLeft="10dp"
+				android:paddingRight="20dp"
+				android:layout_alignParentRight="true" 
+				android:background="@drawable/button_steve"
+				/>
+				
+				
+
+			</RelativeLayout>
+			
+
+			
+			<LinearLayout android:id="@+id/mapImportFields"
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginTop="15dp">
+			</LinearLayout>
+		
+		</LinearLayout>
+	
+	</ScrollView>
+	
+	<LinearLayout
+		android:id="@+id/Banner"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<Button
+		    android:id="@+id/mappingsDoneButton"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"
+		    android:gravity="center_vertical|center_horizontal"
+		    android:minWidth="200dip"
+		    android:text="@string/done"  />
+		</LinearLayout>
+	
+</LinearLayout>

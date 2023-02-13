@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+		<TextView android:id="@+id/contactsTitle"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginLeft="10sp"
+			/>
+
+
+
+		<LinearLayout
+				android:layout_width="fill_parent" 
+				android:layout_height="4px" 
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:background="#C0C0C0"
+			>
+			</LinearLayout>
+    
+    <ListView android:layout_width="fill_parent"
+              android:id="@+id/contactList"
+              android:layout_height="wrap_content"
+              android:dividerHeight="2sp"
+              android:layout_weight="1"/>
+</LinearLayout>

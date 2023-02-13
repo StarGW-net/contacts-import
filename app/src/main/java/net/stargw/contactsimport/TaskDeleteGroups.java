@@ -1,0 +1,237 @@
+package net.stargw.contactsimport;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import android.app.Dialog;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.PowerManager;
+import android.provider.ContactsContract;
+import android.text.format.Time;
+import android.view.Gravity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+	
+//
+// Delete all contacts. Nice little spinner. Cannot cancel this.
+//
+public class TaskDeleteGroups extends AsyncTask<Void, String, Integer>
+{
+	int prog = 0;
+	int max = 0;
+	
+	TaskController myTaskController;
+	TaskCallback callback;
+	
+	Context context;
+	Settings settings;
+	
+	ArrayList<ContactRecordDelete> groupList;
+	PowerManager.WakeLock wakeLock;
+	
+	public TaskDeleteGroups(TaskController t,Context c, ArrayList<ContactRecordDelete> r, TaskCallback l, int b)
+	{
+		context = c;
+		myTaskController = t;
+		groupList = r;
+		callback = l;
+		max = b;
+		
+		settings = new Settings();
+		settings.load("del");
+		
+		PowerManager pm = (PowerManager)context.getSystemService(Context.POWER_SERVICE);
+		wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "My wakelook");
+	}
+	
+	
+	// so we can update periodically and dismiss it.
+	ProgressDialog dialog;
+	
+	protected void onPreExecute (){
+		
+		// max = Global.CheckContacts(context,Global.accountName,Global.accountType);
+		
+
+		dialog = new ProgressDialog(context);
+
+		Logs.myLog("Async Delete Started",1);
+		dialog.setMessage(String.format(context.getString(R.string.deletingGroups01),max));
+		
+		// dialog.setIndeterminate(true);
+		dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+		dialog.setMax(max);
+		
+		dialog.setCanceledOnTouchOutside(false);
+		dialog.setCancelable(false); 
+		
+		dialog.setButton(DialogInterface.BUTTON_NEGATIVE, context.getString(R.string.cancelDelete), new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.dismiss();
+				Logs.myLog("Cancelled delete",1);
+				cancel(true);
+			}
+		});
+		
+		dialog.show();
+	}
+
+	protected Integer doInBackground(Void...arg0) 
+	{
+		Time time = new Time(Time.getCurrentTimezone());
+		
+		// Timing
+		time.setToNow();
+		long start = time.toMillis(false);
+		
+		wakeLock.acquire(); 
+		DelGroups();
+
+		// Timing
+		time.setToNow();
+		long stop = time.toMillis(false);
+		Logs.myLog("Delete operation took " + ((stop - start)/1000) + " seconds.",1);
+
+		
+		return 0;
+	}
+
+	protected void onCancelled() 
+	{
+		wakeLock.release();
+		dialog.dismiss();
+		myTaskController.cancelTasks(); 
+		
+		myInfoMessage(context,
+				context.getString(R.string.cancelled),
+				String.format(context.getString(R.string.deletedGroups01),prog,max,settings.getAccountName()) ); // see logs
+	}
+	
+	
+	protected void onPostExecute(Integer result) 
+	{
+		
+		wakeLock.release();
+		dialog.dismiss();
+		myTaskController.setTaskDeleteGroups(false);
+		
+		// vHandler.sendMessage(Message.obtain(vHandler, 0, "Wibble")); // send message to let GUI to know to update.
+		
+		myTaskController.lastTask();
+		
+		// we always want to display a message here even if not last task
+		if (max == prog)
+		{
+			myInfoMessage(context,
+					context.getString(R.string.success),
+					String.format(context.getString(R.string.deletedGroups01),prog,max,settings.getAccountName()) ); // see logs
+		} else {
+			myInfoMessage(context,
+					context.getString(R.string.failure),
+					String.format(context.getString(R.string.deletedGroups02),prog,max,settings.getAccountName()) ); // see logs
+		}
+
+		myTaskController.nextTask();
+
+	}
+	
+	protected void onProgressUpdate(String...message)
+	{
+	
+		if (prog == 0)
+		{
+			dialog.setMessage(message[0]);
+		} else {
+			dialog.setProgress(prog);
+		}
+	}
+	
+
+	protected void displayProgress(int val, String buf){
+		prog = val;
+		publishProgress(buf);
+	}
+	
+
+	
+	
+	//
+	// Delete selected groups
+	//
+	private int DelGroups() {
+
+		int n = 0;
+		Iterator<ContactRecordDelete> it = groupList.iterator();
+		while(it.hasNext())
+		{
+			ContactRecordDelete obj = it.next();
+		    //Do something with obj
+		    if (obj.isChecked())
+		    {
+		    
+				Long id = obj.getId();
+			    
+				Uri ContactGroupUri = Uri.withAppendedPath(ContactsContract.Groups.CONTENT_URI, Long.toString(id));
+		
+				Uri DeleteUri = ContactGroupUri.buildUpon()
+				.appendQueryParameter(ContactsContract.CALLER_IS_SYNCADAPTER, "true")
+				.build();
+		
+				try {
+					context.getContentResolver().delete(DeleteUri,null,null);
+				} catch (Exception e) {
+					// status = "ERROR DELETING: " + id + " " + name;
+				}	
+				n++;
+				displayProgress(n,"");
+				if (isCancelled())
+				{
+					return n;
+				}
+		    }
+		}
+		return n;
+	}
+	
+	//
+	// Display a popup info screen
+	//
+	public void myInfoMessage(final Context context, String header, String message)
+	{
+		final Dialog info = new Dialog(context);
+
+		info.setContentView(R.layout.dialog_info);
+		info.setTitle(header);
+		
+		TextView text = (TextView) info.findViewById(R.id.infoMessage);
+		text.setText(message);
+		text.setGravity(Gravity.CENTER_HORIZONTAL);  
+		
+		Button dialogButton = (Button) info.findViewById(R.id.infoButton);
+
+		
+		dialogButton.setOnClickListener(new OnClickListener() {
+			// @Override
+			public void onClick(View v) {
+				// notificationCancel(context);
+				info.cancel();
+				TaskController myTaskController = new TaskController();
+				myTaskController.setTaskGetContactsDelete(true);
+				myTaskController.myTaskGetContactsDelete = new TaskGetContactsDelete(myTaskController,context, groupList, callback, settings, false);
+				myTaskController.nextTask();
+			}
+		});
+		
+
+		info.show();
+		Logs.myLog(header + ":" + message,1);
+	}
+}
+

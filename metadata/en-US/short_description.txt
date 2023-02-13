@@ -1,0 +1,1 @@
+ Import your CSV contacts from your favourite desktop client without any cloud syncing.

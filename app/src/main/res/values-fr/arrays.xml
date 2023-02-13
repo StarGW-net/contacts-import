@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="importProfiles">	
+	<item>Réinitialiser tous les champs</item>
+	<item>Correspondance personnalisée</item>  
+	<item>Correspondance Outlook Anglais</item>
+	<item>Correspondance Outlook Espagnol</item>
+	<item>Correspondance Thunderbird</item>
+	<item>Correspondance Alpha</item>
+	</string-array>
+	
+	
+	<string-array name="importProfilesFriendly">  
+	<item>Aucun</item>
+	<item>Personnalisé</item>  
+	<item>Outlook Anglais</item>
+	<item>Outlook Espagnol</item>
+	<item>Thunderbird</item>
+		<item>SW Cloud</item>
+		<item>SW Fastmail</item>
+	</string-array>
+	
+	
+	<string-array name="codePages">  
+		<item>CP1252</item>
+		<item>UTF-8</item>
+		<item>CP1250</item>
+		<item>CP1251</item>
+		<item>CP1253</item>
+		<item>CP1254</item>
+		<item>CP1255</item>
+		<item>CP1256</item>
+		<item>CP1257</item>
+		<item>CP1258</item>
+		<item>CP874</item>
+		<item>CP932</item>
+		<item>CP936</item>
+		<item>CP949</item>
+		<item>CP950</item>
+		<item>UTF-16</item>
+	</string-array>
+	
+	<string-array name="codePagesFriendly">  
+		<item>USA &amp; Europe de l\'Ouest - CP1252</item>
+		<item>UTF-8</item>
+		<item>Europe de l\'Est - CP1250</item>
+		<item>Cyrillique - CP1251</item>
+		<item>Grec - CP1253</item>
+		<item>Turk - CP1254</item>
+		<item>Hébreu - CP1255</item>
+		<item>Arabe - CP1256</item>
+		<item>Baltique - CP1257</item>
+		<item>Vietnamien - CP1258</item>
+		<item>Thai - CP874</item>
+		<item>Japonais Shift-JIS - CP932</item>
+		<item>Chinois simplifié GBK - CP936</item>
+		<item>Coréen - CP949</item>
+		<item>Chinois traditionnel Big5 - CP950</item>
+		<item>UTF-16</item>
+	</string-array>
+	
+
+		
+	
+	<string-array name="swipePages">
+		<item>IMPORTER</item>
+		<item>SAUVEGARDER &amp; RESTAURER</item>
+		<item>EXPORTER</item>
+		<item>SUPPRIMER</item>
+		<item>CONSULTER</item>
+		<item>LOGS &amp; AIDE</item>
+		<item>WIBBLE</item>
+	</string-array>
+
+	<string-array name="logLevels">
+		<item>Normal</item>
+		<item>Verbeux</item>
+		<item>Debug</item>
+	</string-array>
+	
+</resources>
