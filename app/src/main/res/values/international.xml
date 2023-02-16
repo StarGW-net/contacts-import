@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools"
 	tools:ignore="MissingTranslation">
-	<string name="version">Help (v23)</string>
+	<string name="version">Help (v35)</string>
 	<string name="app_name">Contacts Import</string>
 	<string name="accountName">My Contacts</string>
-	<string name="accountType">eu.stargw</string>
-	<string name="authAccount">Phone</string>
-	
+	<string name="accountType">net.stargw</string>
+	<string name="authAccountType">Contacts Import</string>
+
 	<string name="contactsFilesDir">Contacts Files</string>
 	
 </resources>

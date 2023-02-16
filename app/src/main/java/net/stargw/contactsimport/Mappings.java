@@ -343,7 +343,8 @@ public class Mappings {
 		field[10] = Global.NOTES;
 
 		field[11] = Global.WEBSITE;
-		
+
+		field[12] = Global.PHOTO;
 	}
 
 	public void defaultFastmailPrefs()

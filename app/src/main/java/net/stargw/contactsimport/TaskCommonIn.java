@@ -729,7 +729,18 @@ public class TaskCommonIn extends AsyncTask<Void, String, Integer> {
 				if (dir == null) {
 					Logs.myLog("Photo - iPath: " + Global.iPath,3);
 					file = new File(Global.iPath);
-					dir = file.getParent();;
+					dir = file.getParent().replace("/root/","/");
+					Logs.myLog("Photo - getParent: " + dir,3);
+					/*
+					Logs.myLog("Photo - getPath: " + file.getPath(),3);
+					Logs.myLog("Photo - getAbsolutePath: " + file.getAbsolutePath(),3);
+					try {
+						Logs.myLog("Photo - getCanonicalPath: " + file.getCanonicalPath(),3);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+					 */
+
 				}
 
 				Logs.myLog("Photo - DIR: " + dir,3);

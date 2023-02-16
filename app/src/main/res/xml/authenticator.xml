@@ -24,5 +24,5 @@
     android:accountType="@string/accountType"
     android:icon="@drawable/icon_acc"
     android:smallIcon="@drawable/icon_acc"
-    android:label="@string/authAccount"
+    android:label="@string/authAccountType"
 />

@@ -53,7 +53,7 @@ public class FragmentHelp extends FragmentCommon implements FragmentLifecycle {
 	
 	private OnClickListener buttonBuyProListener = new OnClickListener() {
 		public void onClick(View v) {
-			final String appPackageName = "eu.stargw.contactsimport"; 
+			final String appPackageName = "net.stargw.contactsimport";
 			try {
 				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
 			} catch (android.content.ActivityNotFoundException anfe) {
@@ -229,7 +229,7 @@ public class FragmentHelp extends FragmentCommon implements FragmentLifecycle {
 			Logs.myLog("Could not get version number", 3);
 		}
 
-		String url = "https://www.stargw.net/apps/contactsimport/help.html?ver=" + verName;
+		String url = "https://www.stargw.net/android/contactsimport/help.html?ver=" + verName;
 		Intent i = new Intent(Intent.ACTION_VIEW);
 		i.setData(Uri.parse(url));
 		startActivity(i);

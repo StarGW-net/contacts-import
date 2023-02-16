@@ -321,6 +321,8 @@ public class FragmentCommon extends Fragment {
 				PackageManager pm = Global.getContext().getPackageManager();
 				String s = pm.getText(ad.packageName, ad.labelId, null).toString();
 				display[n] = new AccountData(acc.name,"(" + s + ")");
+				Logs.myLog("Account name display = " + s,2);
+
 				// display[n] = s;
 			} catch (Exception e) {
 				Logs.myLog("No display info for Account Type = " + acc.type + " :" + e,2);
