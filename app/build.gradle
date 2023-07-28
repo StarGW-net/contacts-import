@@ -9,13 +9,27 @@ android {
         applicationId "net.stargw.contactsimport"
         minSdkVersion 14
         targetSdkVersion 29
-        versionCode 35
-        versionName "35"
+        versionCode 36
+        versionName "36"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "${applicationId}-${variant.buildType.name}-v${defaultConfig.versionName}.apk"
+            Task swTask = project.task("zzz${variant.name}", type: Copy) {
+                from output.outputFile.getParent()
+                into file("apks")
+                include output.outputFileName
+                // rename(output.outputFileName, "${applicationId}-${variant.buildType.name}-v${defaultConfig.versionName}.apk")
+                rename(output.outputFileName,output.outputFileName);
+
+            }
+            variant.assemble.finalizedBy(swTask)
         }
     }
 }
