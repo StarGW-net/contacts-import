@@ -6,12 +6,3 @@ Your imported Android contacts are kept on your phone and never synced with any 
 
 Note this is a one way import from your authorative CSV file. Contacts are imported onto a new account "My Contacts"|owned by the app. If you uninstall the app this account and contacts contained within it will be deleted. The idea is you leave the app on the phone, it does not run or use any resources when not being used. And use the app again to reimport the CSV when it changes. It is also recommended that you take backups and exports, and save outide the app.
 
-Version 36
-==========
-Some Gradle Build Changes
-
-Version 35
-==========
-Initial Release on FDroid
-
-
