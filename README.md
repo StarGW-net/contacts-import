@@ -1,5 +1,11 @@
 Import your CSV contacts from your favourite desktop client without any cloud syncing. Multi-language fully supported including all common localised codepages (from US & Westen Europe to Eastern Europe to China and Japan) and also UTF, so you get your contact information exactly how it should be on the phone.
- 
+
+<table><tr><td>
+<img src="https://github.com/StarGW-net/contacts-import/blob/main/metadata/en-US/images/phoneScreenshots/1.png?raw=true"
+     alt="Contacts"
+     height="320">
+</td></tr></table>
+
 Import contacts from Excel CSV files with over 100 field mappings available. Popular address books formats fully supported to easily get your contacts from Microsoft Outlook and other applications onto your phone. Even has custom mapping features to give you full control over which contact fields you want to import on your phone
 
 Your imported Android contacts are kept on your phone and never synced with any Cloud service ever. With this app you will never have to give your contacts to Google, Yahoo, or any other Cloud service again. No need to install any sync bloatware programs on your PC. Your contacts will remain confidential to you.
@@ -10,13 +16,12 @@ After a number of years I have stopped releasing apps on Google Play and have no
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Get it on F-Droid"
-     height="80">](https://f-droid.org/packages/net.stargw.contactsimport/)
+     height="80">](https://www.stargw.net/android/apks.html?net.stargw.contactsimport)
     
-<br>
 Buy Developer a Coffee:
 <br>
 
 [<img src="https://www.stargw.net/android/karma/images/coffee-buy2.png"
      alt="By Developer a Coffee"
-     height="120">](https://www.stargw.net/money/?android)
+     height="120">](https://www.stargw.net/dosh/donate.html?android)
 
