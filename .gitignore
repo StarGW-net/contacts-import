@@ -12,3 +12,4 @@ GRAPHICS
 /app/build
 /app/release
 /app/debug
+/app/apks/*.apk
